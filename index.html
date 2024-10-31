@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Professores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function addProfessor() {
+            const professorName = document.getElementById('professor-name').value;
+            const container = document.getElementById('professores-container');
+
+            if (professorName) {
+                const professorDiv = document.createElement('div');
+                professorDiv.className = 'professor';
+
+                professorDiv.innerHTML = `
+                    <h3>Resposta sobre o(a) professor(a) ${professorName}:</h3>
+                    <div class="input">
+                        <label>Turmas & disciplinas (separadas por um _):</label>
+                        <input type="text" name="${professorName}-disciplinas" placeholder="Ex.: 3A_Matemática 4A_Física">
+                    </div>
+                    <div class="input">
+                        <label>Horas de trabalho por semana:</label>
+                        <input type="number" name="${professorName}-horas" placeholder="Ex.: 18">
+                    </div>
+                `;
+
+                container.appendChild(professorDiv);
+                document.getElementById('professor-name').value = ''; // Limpa o campo de entrada
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="Navbar">
+        <img src="logo.png" alt="logo">
+        <h1>
+            <a href="sobre-nos.html">Sobre nós</a>
+        </h1>
+        <h1>
+            <a href="pag-inicial.html">Página inicial</a> 
+        </h1>
+    </nav>
+
+    <div class="quest">
+        <div class="titulo-container">
+            <h1>Seja bem-vindo ao Atena!</h1>
+            <h3>Preencha o formulário abaixo:</h3>
+        </div>
+
+        <form onsubmit="redirectToCronograma(event)" class="form">
+            <div class="input">
+                <label>Quantidade de períodos por dia:</label>
+                <input type="number" name="periodos" placeholder="Ex.: 4" required>
+            </div>
+
+            <div class="input">
+                <label>Nomes das turmas (separados por espaço):</label>
+                <input type="text" name="turmas" placeholder="Ex.: 3A 3B 4A" required>
+            </div>
+
+            <div class="input">
+                <label>Nomes dos(as) professores(as):</label>
+                <div class="professor-input-container">
+                    <input type="text" id="professor-name" placeholder="Nome do professor" required>
+                    <button class="btn-simples" type="button" onclick="addProfessor()">Adicionar Professor</button>
+                </div>
+            </div>
+
+            <div id="professores-container"></div>
+        </form>
+
+        <button class="btn" type="submit" onclick="window.location.href='cronograma.html'">Enviar</button>
+    </div>
+</body>
+
+</html>

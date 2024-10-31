@@ -1,0 +1,176 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(fundo.jpg);
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.Navbar {
+  /* Texto branco */
+  width: 100vw;
+  /* Largura da viewport */
+  overflow: hidden;
+  /* Esconde a rolagem */
+  height: 150px;
+  /* Altura definida */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  /* Espaçamento interno */
+  z-index: 10;
+  /* Z-index alto */
+  margin-left: -15px;
+}
+
+.Navbar h1 {
+  font-size: 34px;
+  color: #f7f6fa;
+  margin-left: 40px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.Navbar h1 a {
+  text-decoration: none;
+  /* Remove o sublinhado do link */
+  color: inherit;
+  /* Herda a cor do h1 */
+}
+
+.Navbar img {
+  margin-left: 30px;
+}
+
+.Navbar h1:hover {
+  color: white;
+  /* Cor ao passar o mouse */
+  transform: scale(1.2);
+  /* Aumenta o tamanho */
+}
+
+.info-inicial {
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 40px;
+  padding: 20px;
+  background: transparent;
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+}
+
+.info-inicial h1 {
+  color: #ffffff;
+}
+
+.info-inicial h2 {
+  color: #204b39;
+}
+
+.info-inicial p {
+  color: #ffffff;
+  font-size: xx-large;
+}
+
+.btn {
+  margin-top: 20px; 
+  padding: 15px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  width: 300px;
+  height: 50px;
+  font-size: large;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color: #13523f; /* Cor padrão */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.btn-active {
+  background-color: red; /* Cor do botão após o clique */
+  color: white; /* Cor do texto após o clique */
+}
+
+.btn:hover {
+  background-color: #13824e; /* Cor ao passar o mouse */
+}
+
+.btn.clicked:hover {
+  background-color: red; /* Remove a cor verde após o clique */
+}
+
+.seta {
+  width: 150px;
+  /* Ajuste conforme necessário */
+  height: 150px;
+  /* Mantém a proporção */
+  align-self: center;
+  /* Centraliza verticalmente entre as caixas */
+  margin: 0px;
+  /* Espaçamento lateral, ajuste conforme necessário */
+}
+
+.tutorial-content {
+  display: none;
+  /* Começa oculto */
+  margin-top: 40px;
+  display: flex;
+  /* Alinhamento horizontal */
+  justify-content: space-evenly;
+  /* Espaçamento igual entre as caixas */
+  flex-wrap: wrap;
+  /* Permite quebra de linha se necessário */
+}
+
+.tutorial-item {
+  background: transparent;
+  backdrop-filter: blur(100px);
+  border-radius: 5px;
+  /* Cantos arredondados */
+  padding: 15px;
+  /* Espaçamento interno */
+  width: 300px;
+  /* Largura fixa */
+  height: 200px;
+  /* Altura fixa */
+  display: flex;
+  /* Flex para conteúdo interno */
+  flex-direction: column;
+  /* Alinha conteúdo na coluna */
+  justify-content: center;
+  /* Centraliza verticalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+  margin: 10px;
+  /* Espaçamento entre caixas */
+  opacity: 0;
+  /* Começa invisível */
+  transform: translateY(20px);
+  /* Desloca para baixo */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* Animação de opacidade e movimento */
+  color: #ffffff;
+  font-size: medium;
+}
+
+.tutorial-item.visible {
+  opacity: 1;
+  /* Torna visível */
+  transform: translateY(0);
+  /* Retorna ao lugar original */
+}
