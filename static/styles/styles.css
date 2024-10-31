@@ -89,7 +89,7 @@ body {
   border-radius: 10px;
   max-height: 80vh;  /* Define uma altura máxima para o questionário */
   overflow-y: auto;  /* Permite a rolagem interna */
-  width: 750vw;
+  width: 70vw;
   padding: 20vw;
   color: #ffffff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), -4px -4px 9px rgba(0, 0, 0, 0.3);
