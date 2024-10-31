@@ -24,46 +24,46 @@ body {
 }
 
 .professor-input-container input {
-  margin-right: 10px; /* Espaço entre o input e o botão */
+  margin-right: 10vw; /* Espaço entre o input e o botão */
   flex-grow: 1; /* O input ocupa o espaço restante */
 }
 
 .form {
-  margin-top: 10px;
+  margin-top: 10vh;
 }
 
 .cronograma {
   border-radius: 10px;
   background-color: rgb(236, 243, 249);
   height: auto; /* Mude para auto para se ajustar ao conteúdo */
-  width: 1250px;
-  padding: 20px; 
+  width: 1250vw;
+  padding: 20vw; 
   color: #ffffff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), -4px -4px 9px rgba(0, 0, 0, 0.3);
 }
 
 .Navbar {
   /* Texto branco */
-  width: 100%;
+  width: 100vw;
   /* Largura da viewport */
   overflow: hidden;
   /* Esconde a rolagem */
-  height: 150px;
+  height: 150vh;
   /* Altura definida */
-  padding: 10px;
+  padding: 10vw;
   /* Espaçamento interno */
   z-index: 10;
   /* Z-index alto */
-  margin-left: 0px;
+  margin-left: 0vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 .Navbar h1 {
-  font-size: 34px;
+  font-size: 34vw;
   color: #f7f6fa;
-  margin-left: 40px;
+  margin-left: 40vw;
   transition: color 0.3s, transform 0.3s;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .Navbar img {
-  margin-left: 30px;
+  margin-left: 30vw;
 }
 
 .Navbar h1:hover {
@@ -89,8 +89,8 @@ body {
   border-radius: 10px;
   max-height: 80vh;  /* Define uma altura máxima para o questionário */
   overflow-y: auto;  /* Permite a rolagem interna */
-  width: 750px;
-  padding: 20px;
+  width: 750vw;
+  padding: 20vw;
   color: #ffffff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), -4px -4px 9px rgba(0, 0, 0, 0.3);
   opacity: 90%;
@@ -108,22 +108,22 @@ body {
 }
 
 .btn-simples {
-  margin-top: 20px; 
-  padding: 10px 15px;
+  margin-top: 20vh; 
+  padding: 10vw 15vw;
   border: none;
   outline: none;
   color: #ffffff;
   cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 12px;
+  border-radius: 12vw;
   width: 3o0px;
   height: auto;
-  font-size: 14px;
+  font-size: 14vw;
   display: flex; 
   justify-content: right; 
   align-items: right;
-  margin-left: 10px; /* Centraliza horizontalmente */
+  margin-left: 10vw; /* Centraliza horizontalmente */
   margin-right: auto; /* Centraliza horizontalmente */
 
 }
@@ -132,12 +132,12 @@ body {
   content: "";
   z-index: -1;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: #0d6758;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 10vw;
 }
 
 .btn-simples::before {
@@ -148,16 +148,16 @@ body {
     #00FFD5, #002BFF, #FF00C8, #FF0000
   );
   position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 600%;
+  top: -2vh;
+  left: -2vw;
+  background-size: 600vh;
   z-index: -1;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   filter: blur(8px);
   animation: glowing 20s linear infinite;
   transition: opacity .3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 10vw;
   opacity: 0;
 }
 
@@ -182,17 +182,17 @@ body {
 }
 
 .btn {
-  margin-top: 20px; 
-  padding: 15px;
+  margin-top: 20vh; 
+  padding: 15vw;
   border: none;
   outline: none;
   color: #ffffff;
   cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 12px;
-  width: 300px;
-  height: 50px;
+  border-radius: 12vw;
+  width: 300vw;
+  height: 50vh;
   font-size: large;
   display: flex; 
   justify-content: center; 
@@ -205,12 +205,12 @@ body {
   content: "";
   z-index: -1;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: #0d6758;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 10vw;
 }
 
 /* Glow */
@@ -222,8 +222,8 @@ body {
     #00FFD5, #002BFF, #FF00C8, #FF0000
   );
   position: absolute;
-  top: -2px;
-  left: -2px;
+  top: -2vh;
+  left: -2vw;
   background-size: 600%;
   z-index: -1;
   width: calc(100% + 4px);
@@ -231,7 +231,7 @@ body {
   filter: blur(8px);
   animation: glowing 20s linear infinite;
   transition: opacity .3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 10vw;
   opacity: 0;
 }
 
@@ -257,18 +257,18 @@ body {
 
 .input {
   position: relative;
-  width: 100%;
-  margin-bottom: 15px; /* Espaço entre os inputs */
+  width: 100vw;
+  margin-bottom: 15vh 15vw; /* Espaço entre os inputs */
 }
 
 .input input {
   border: none; /* Remove bordas padrão */
-  border-bottom: 2px solid #071d1a; /* Borda inferior */
+  border-bottom: 2vh 2 vw solid #071d1a; /* Borda inferior */
   background: transparent; /* Sem fundo */
   width: 100%; /* Ocupa toda a largura do contêiner */
   outline: none; /* Remove a outline ao focar no input */
-  padding: 8px 0; /* Espaçamento interno no topo e na parte inferior */
-  font-size: 16px; /* Ajuste o tamanho da fonte se necessário */
+  padding: 8vw 0; /* Espaçamento interno no topo e na parte inferior */
+  font-size: 16vh; /* Ajuste o tamanho da fonte se necessário */
   color: #ffffff;
 }
 
