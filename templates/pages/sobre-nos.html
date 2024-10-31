@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles-sobre-nos.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/styles-sobre-nos.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="body-sobre-nos">
     <nav class="Navbar">
-        <img src="logo.png" alt="logo">
+      <img src="{{url_for('static',filename='images/logo.png')}}" alt="logo">
         <h1>
-            <a href="sobre-nos.html">Sobre nós</a>
+            <a href="about">Sobre nós</a>
         </h1>
         <h1>
-            <a href="pag-inicial.html">Página inicial</a>
+            <a href="..">Página inicial</a>
         </h1>
     </nav>
 
@@ -31,11 +31,11 @@
                 @Gabriel M0nteir0
             </a>
         </div>
-        <img src="foto_imersao.jpeg" alt="GIF de Celebração" class="card-gif">
+        <img src="{{url_for('static',filename='images/foto_imersao.jpeg')}}" alt="GIF de Celebração" class="card-gif">
     </div>
 
     <div class="card">
-        <img src="GabrielMonteiroImersao.jpg" alt="GIF de Celebração" class="card-gif">
+      <img src="{{url_for('static',filename='images/GabrielMonteiroImersao.jpg')}}" alt="GIF de Celebração" class="card-gif">
         <div class="card-content">
             <h1>Gabriel Monteiro</h1>
             <p class="Font-Large-GM">Oi, sou o Gabriel Monteiro e sempre gostei de enfrentar novos desafios por isso em 2022 entrei para o Ismart, projeto que me
@@ -59,11 +59,11 @@
                 @akai-keisanki
             </a>
         </div>
-        <img src="Iago.jpg" alt="GIF de Celebração" class="card-gif">
+        <img src="{{url_for('static',filename='images/Iago.jpg')}}" alt="GIF de Celebração" class="card-gif">
     </div>
 
     <div class="card">
-        <img src="Maria-Rita.JPG" alt="GIF de Celebração" class="card-gif">
+      <img src="{{url_for('static',filename='images/Maria-Rita.JPG')}}" alt="GIF de Celebração" class="card-gif">
         <div class="card-content" class="Font-Large">
             <h1>Maria Rita</h1>
             <p class="Font-Large">Olá, neste projeto você responderá a um questionário dizendo quais informações queira adicionar a descrisão do cartão, adicionar (caso seja de seu interesse) uma a ele
@@ -87,7 +87,7 @@
                 @Gabriel M0nteir0
             </a>
         </div>
-        <img src="foto_imersao.jpeg" alt="GIF de Celebração" class="card-gif">
+        <img src="{{url_for('static',filename='images/foto_imersao.jpeg')}}" alt="GIF de Celebração" class="card-gif">
     </div>
 
 </body>

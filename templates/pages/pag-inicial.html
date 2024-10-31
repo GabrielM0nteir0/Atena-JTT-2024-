@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atena - Página Inicial</title>
-    <link rel="stylesheet" href="styles-pag-inicial.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles-pag-inicial.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="Navbar">
-        <img src="logo.png" alt="logo">
-        <h1><a href="sobre-nos.html">Sobre nós</a></h1>
-        <h1><a href="pag-inicial.html">Página inicial</a></h1>
+        <img src="{{url_for('static', filename='images/logo.png')}}" alt="logo">
+        <h1><a href="about">Sobre nós</a></h1>
+        <h1><a href="">Página inicial</a></h1>
     </nav>
 
     <div class="info-inicial">
@@ -32,7 +32,7 @@
             <p>O primeiro passo é responder o nosso formulário, é nele que extraimos os dados que seram necessários para
                 a criação do cronograma, como o nome de todos os professores, matérias que lecionam, etc.</p>
         </div>
-        <img src="seta.png" alt="Seta" class="seta">
+        <img src="{{url_for('static',filename='images/seta.png')}}" alt="Seta" class="seta">
         <div class="tutorial-item">
             <h3>O cronograma</h3>
             <p>Após finalizar o questionário você deve enviá-lo clicando no botão "enviar", com isso você será
