@@ -13,11 +13,11 @@ body {
 }
 
 .Font-Large {
-    font-size: xx-large;
+    font-size: 4vh;
 }
 
 .Font-Large-GM {
-    font-size: 29px;
+    font-size: 4vh;
 }
 
 .card {
@@ -25,22 +25,23 @@ body {
     display: flex;
     align-items: left;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 3vh;
     overflow: hidden;
-    height: 300px;
-    width: 1500px;
+    height: 50vh;
+    width: 85vw;
     margin: 2rem; /* Centraliza o card e adiciona espaço ao redor */
     margin-left: 20px;
 }
 
 .card-content {
-    padding: 20px;
+    padding: 3vh;
     flex: 1;
 }
 
 .card-content h2 {
     margin-top: 0;
     color: #000000;
+    font-size: 2vh;
 }
 
 .professor-input-container {
@@ -79,19 +80,19 @@ body {
     /* Largura da viewport */
     overflow: hidden;
     /* Esconde a rolagem */
-    height: 150px;
+    height: 10vh;
     /* Altura definida */
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 2vh;
     /* Espaçamento interno */
     z-index: 10;
     /* Z-index alto */
 }
 
 .Navbar h1 {
-    font-size: 34px;
+    font-size: 3.2vh;
     color: #f7f6fa;
     margin-left: 40px;
     transition: color 0.3s, transform 0.3s;
@@ -105,7 +106,8 @@ body {
 }
 
 .Navbar img {
-    margin-left: 30px;
+    margin-left: 3vh;
+    height: 30vh;
 }
 
 .Navbar h1:hover {
@@ -215,6 +217,10 @@ body {
     background: transparent;
 }
 
+h1{
+  font-size: 5vh;
+}
+
 .btn-simples:active {
     color: hwb(38 63% 2%);
     font-weight: bold;
@@ -307,6 +313,11 @@ body {
     width: 100%;
     margin-bottom: 15px;
     /* Espaço entre os inputs */
+}
+
+.autor
+{
+  font-size: 3vh;
 }
 
 .input input {
