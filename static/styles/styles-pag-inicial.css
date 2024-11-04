@@ -8,7 +8,6 @@ body {
   align-items: left;
   font-family: 'Roboto', sans-serif;
   background-image: url("../images/fundo.jpg");
-  overflow: hidden;
 }
 
 
@@ -18,7 +17,7 @@ body {
   /* Largura da viewport */
   overflow: hidden;
   /* Esconde a rolagem */
-  height: 10vh;
+  height: 5vh;
   /* Altura definida */
   display: flex;
   align-items: center;
@@ -117,9 +116,9 @@ body {
 }
 
 .seta {
-  width: 150px;
+  width: 15vh;
   /* Ajuste conforme necessário */
-  height: 150px;
+  height: 15vh;
   /* Mantém a proporção */
   align-self: center;
   /* Centraliza verticalmente entre as caixas */
@@ -130,7 +129,7 @@ body {
 .tutorial-content {
   display: none;
   /* Começa oculto */
-  margin-top: 40px;
+  margin-top: 4vh;
   display: flex;
   /* Alinhamento horizontal */
   justify-content: space-evenly;
@@ -142,13 +141,13 @@ body {
 .tutorial-item {
   background: transparent;
   backdrop-filter: blur(100px);
-  border-radius: 5px;
+  border-radius: 3vh;
   /* Cantos arredondados */
-  padding: 15px;
+  padding: 1.5vh;
   /* Espaçamento interno */
-  width: 300px;
+  width: 40vh;
   /* Largura fixa */
-  height: 200px;
+  height: 40vh;
   /* Altura fixa */
   display: flex;
   /* Flex para conteúdo interno */

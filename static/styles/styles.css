@@ -2,14 +2,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Mantém a imagem fixa enquanto rola */
-  padding: 0;
+  padding: 10vh;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Roboto', sans-serif;
   background-image: url("../images/fundo.jpg");
-  overflow: hidden; /* Impede a rolagem externa */
 }
 
 label
