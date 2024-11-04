@@ -2,7 +2,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Mantém a imagem fixa enquanto rola */
-  padding: 10vh;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -167,8 +166,8 @@ h3
   left: -2vw;
   background-size: 600vh;
   z-index: -1;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  width: calc(100% + 4vw);
+  height: calc(100% + 4vh);
   filter: blur(8px);
   animation: glowing 20s linear infinite;
   transition: opacity .3s ease-in-out;
@@ -241,8 +240,8 @@ h3
   left: -2vw;
   background-size: 600%;
   z-index: -1;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  width: calc(100% + 4vw);
+  height: calc(100% + 4vh);
   filter: blur(8px);
   animation: glowing 20s linear infinite;
   transition: opacity .3s ease-in-out;
